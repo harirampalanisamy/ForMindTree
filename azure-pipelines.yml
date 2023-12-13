@@ -1,13 +1,18 @@
-resources:         
+resources:
   repositories:
-  - repository: ForMindTree      
-    type: GitHub
-    connection: GithubCloud_Mindtree
-    source: harirampalanisamy/ForMindTree
+  - repository: ForMindTree
+    type: github
+    name: harirampalanisamy/ForMindTree
+    endpoint: GithubCloud_Mindtree
+    trigger:
+     branches:
+        include:
+          - main
     pr:
       branches:
         include:
         - main
+
 
 pool:
   vmImage: windows-latest
