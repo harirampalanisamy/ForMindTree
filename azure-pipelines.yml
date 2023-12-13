@@ -4,7 +4,7 @@ resources:
     type: GitHub
     connection: GithubCloud_Mindtree
     source: harirampalanisamy/ForMindTree
-    pr: 
+    pr:
       branches:
         include:
         - main
