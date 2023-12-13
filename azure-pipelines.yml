@@ -6,7 +6,8 @@ resources:
     source: harirampalanisamy/ForMindTree
     pr: 
       branches:
-      - main
+        include:
+        - main
 
 pool:
   vmImage: windows-latest
